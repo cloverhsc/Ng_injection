@@ -10,7 +10,7 @@ import { EvenBetterLogger}  from './even-better-logger.service';
   providers: [
       { provide: Logger, useClass: Logger},
       UserService,
-      {provide: Logger, useClass: EvenBetterLogger}
+      {provide: EvenBetterLogger, useClass: EvenBetterLogger}
   ],
 })
 export class AppComponent {
